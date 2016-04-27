@@ -8,6 +8,8 @@ COPY ./Caddyfile /etc/Caddyfile
 
 #USER caddy
 
+EXPOSE 80
+
 ENTRYPOINT ["tini"]
 
 CMD ["caddy", "--conf", "/etc/Caddyfile"]
